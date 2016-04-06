@@ -1,0 +1,54 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.adi.plugin.keychainutil": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "com.cordova.plugins.cookiemaster": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "cordova-plugin-app-version": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "cordova-plugin-insomnia": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "cordova-plugin-screenorientation-landscape": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "de.appplant.cordova.common.registerusernotificationsettings": {
+            "PACKAGE_NAME": "testdevicesettings"
+        },
+        "de.appplant.cordova.plugin.badge": {
+            "PACKAGE_NAME": "testdevicesettings"
+        }
+    },
+    "dependent_plugins": {}
+}

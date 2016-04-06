@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.adi.plugin.keychainutil"
+    version="0.0.1">
+
+    <name>KeyChain Cordova Plugin</name>
+    <description>Allows access to iOS KeyChain and Android Keystore from Cordova.</description>
+
+    <engines>
+        <engine name="cordova" version=">=2.2.0" />
+    </engines>
+
+    <asset src="www/keychain.js" target="plugins/keychain.js" />
+
+	<js-module src="www/keychain.js" name="Keychain">
+    	<clobbers target="window.Keychain" />
+	</js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <!-- feature tag in config.xml -->
+        <config-file target="config.xml" parent="/widget">
+          <feature name="Keychain">
+            <param name="ios-package" value="CDVKeychain"/>
+          </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVKeychain.h" />
+        <header-file src="src/ios/SFHFKeychainUtils/SFHFKeychainUtils.h"/>
+
+        <source-file src="src/ios/CDVKeychain.m"/>
+        <source-file src="src/ios/SFHFKeychainUtils/SFHFKeychainUtils.m" compiler-flags="-fobjc-arc" />
+
+        <framework src="Security.framework" />
+
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Keychain" >
+                <param name="android-package" value="com.adi.plugin.Keychain"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/Keychain.java" target-dir="src/com/adi/plugin/" />
+        <source-file src="src/android/KeyStorage.java" target-dir="src/com/adi/plugin/" />
+        <source-file src="src/android/SecureStorage.java" target-dir="src/com/adi/plugin/" />
+    </platform>
+</plugin>

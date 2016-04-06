@@ -1,0 +1,34 @@
+{
+  "name": "cordova-keychain",
+  "version": "0.0.5",
+  "description": "Allows access to iOS KeyChain and Android Keystore from Cordova.",
+  "cordova": {
+    "id": "cordova-keychain",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "keychain"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=2.2.0"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "David Williams (ADI Health)"
+    },
+    {
+      "name": "Shazron Abdullah"
+    }
+  ],
+  "license": "Apache-2.0"
+}
